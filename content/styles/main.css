@@ -1,0 +1,138 @@
+@font-face {
+ font-family: g;
+ src: url(content/fonts/ Calligraphy.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: g;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+object {
+  height: 100%;
+  width: 100%;  
+}
+object::-webkit-scrollbar-thumb {
+  width: 30px;
+  background-color: #3F9490;
+  border-radius: 5px;
+}
+object::-webkit-scrollbar {
+  width: 10px; 
+  height: 10px;
+}
+object::-webkit-scrollbar-track {
+  margin-top: 95px;
+}
+main {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+header {
+  height: 95px;
+  width: 100%;
+
+  position: fixed;
+
+  line-height: 40px;
+
+  background-color: #61608C;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.5)
+}
+menuitem p {
+  position: relative;
+  z-index: 2;
+
+  color: #E3DBE4;
+  line-height: 40px;
+  
+  background-color: #61608C;
+  padding: 0 11px;
+}
+menuitem a:hover {
+  background-color: #A0A0A0;
+  border-radius: 5px; 
+}
+header a {
+  height: 25px;
+
+  color: #E3DBE4;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+
+  display: inline-block;
+  padding: 0 5px; 
+  border-right: 2px solid #C0C0C0;  
+}
+header > menu {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+
+  display: table;
+  margin: auto;
+}
+header > menu menu {
+  position: absolute;
+  z-index: 1;
+
+  display: table;
+  background-color: #61608C;
+  visibility: hidden; 
+  border-radius: 0 0 5px 5px;    
+}
+menuitem:nth-child(5):hover menu {
+  opacity: 1;
+  visibility: visible;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.5);
+
+  transition: 2s;  
+}
+menuitem {
+  position: relative;
+
+  font-size: 20px;
+  text-align: center;
+
+  display: inline-block;
+}
+menuitem:nth-child(4) {
+  vertical-align: top;
+
+  border: none;
+}
+header img {
+  height: 75px;
+  width: 85px;
+
+  position: relative;
+  top: 10px;
+  left: 10px;
+  
+  border-radius: 5px;
+  margin: auto;
+}
+.border {
+  border: none;
+}
+.img {
+  border: none;
+}
+@media screen and (max-width: 500px) {
+    a {
+      font-size: 8px;
+    }  
+    menuitem p {
+      font-size: 8px;
+    }
+}

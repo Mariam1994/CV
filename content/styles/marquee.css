@@ -1,0 +1,516 @@
+* {
+    vertical-align: top;
+
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f8f8f8;
+    margin-top: 95px;
+}
+
+main {
+    position: relative;
+
+    display: table;
+    margin: auto;
+}
+
+.parent {
+    width: 1224px;
+
+    display: table;
+    background-color: #f8f8f8;
+}
+
+.caption {
+    color: #433c9e;
+    font-family: lobster, cursive;
+    font-size: 40px;
+    text-align: center;
+              
+    padding: 40px 0 60px 0;
+}
+
+.tbody {
+    background-color: #f8f8f8;
+}
+
+.tr {
+    display: table-row;
+}
+
+.th {
+    min-width: 72px;
+    
+    color: #433c9e;
+    text-align: center;
+    vertical-align: middle;
+
+    display: table-cell;   
+}
+
+.td {
+    font-family: impact, charcoal, sans-serif;
+
+    display: table-cell;
+    padding: 2px;
+    background: #f8f8f8;
+    border-radius: 5%;
+}
+
+.td::after {
+    position: absolute;
+    z-index: 2;
+    top: 185px;
+    left: 325px;
+    
+    content: '___________';
+    
+    display: none;
+    
+    transform: rotate(-7deg);
+}
+
+.td:hover a {
+    display: table-cell;
+    border-radius: 40%; 
+}
+
+.td::before {
+    position: absolute;
+    z-index: 2;
+    top: 198px;
+    left: 520px;
+    
+    content: '_________';
+    
+    display: none;
+    
+    transform: rotate(7deg);
+}
+
+a { 
+    color: #000;
+    text-decoration: none;
+
+    display: block;
+    border-radius: 2px;
+
+    transition: 1s;
+}
+
+a::after {
+    height: 89px;
+    width: 144px;
+
+    content: "";
+
+    position: absolute;
+    top: 147px;
+    left: 408px;
+
+    display: none;
+}
+
+a:hover::after {
+    z-index: 1;
+
+    display: inline-block;   
+}
+
+small {
+    font-family: helvetica, sans-serif;
+    font-size: 8px;
+
+    display: block;
+    padding: 3px 0 0 3px;
+} 
+
+small::after {
+    width: 143px;
+
+    content: attr(content-text);
+
+    position: absolute;
+    z-index: 2;
+    top: 150px;
+    left: 415px;
+
+    display: none;
+}
+
+a:hover small::after {
+    display: block;
+}
+
+small::before {
+    width: 40px;
+
+    position: absolute;
+    top: 130px;
+    left: 260px;
+
+    content: 'Atomic number';
+
+    font-family: helvetica, sans-serif;
+    font-size: 12px;
+    
+    display: none;
+}
+
+big {
+    font-size: 15px;
+    text-align: center;
+
+    display: block;
+}
+
+big::after {
+    width: 143px;
+
+    content: attr(content-text);
+
+    position: absolute;
+    z-index: 2;
+    top: 164px;
+    left: 400px;
+
+    font-size: 20px;
+    text-align: center;
+
+    display: none;   
+}
+
+a:hover big::after {
+    display: block;
+}
+
+big::before {
+    width: 40px;
+
+    position: absolute;
+    top: 145px;
+    left: 610px;
+    
+    content: 'Element symbol';
+
+    font-family: helvetica, sans-serif;
+    font-size: 12px;
+    
+    display: none;
+}
+
+bdo {
+    width: 68px;
+
+    font-family: helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    display: block;
+
+    direction: ltr;
+}
+
+bdo::after {
+    width: 143px;
+
+    content: attr(content-text);
+
+    position: absolute;
+    z-index: 2;
+    top: 187px;
+    left: 400px;
+
+    font-size: 13px;
+    text-align: center;
+
+    display: none;   
+}
+
+a:hover bdo::after {
+    display: block;
+}
+bdo::before {
+    width: 40px;
+
+    position: absolute;
+    top: 195px;
+    left: 270px;
+
+    content: 'Element name';
+
+    font-family: helvetica, sans-serif;
+    font-size: 12px;
+
+    display: none;
+}
+
+bdi {
+    width: 68px;
+
+    font-family: Courier New;
+    font-size: 10px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    display: block;
+    padding: 3px 0;
+}
+
+bdi::after {
+    width: 143px;
+
+    content: attr(content-text);
+
+    position: absolute;
+    z-index: 2;
+    top: 202px;
+    left: 400px;
+
+    font-size: 12px;
+    text-align: center;
+
+    display: none;
+}
+
+a:hover bdi::after {
+    display: block;
+}
+
+bdi::before {
+    width: 40px;
+
+    position: absolute;
+    top: 200px;
+    left: 600px;
+
+    content: 'Atomic mass';
+
+    font-family: helvetica, sans-serif;
+    font-size: 12px;
+
+    display: none;
+}
+
+marquee {
+    height: 65px;        
+    width: 70px;
+              
+    position: absolute;
+
+    overflow: hidden;
+    vertical-align: top;
+
+    display: block;   
+}
+
+
+
+figure {
+    position: absolute;
+    z-index: 1;
+    top: 115px;
+    left: 400px;
+}
+
+img {
+    width: 170px;
+}
+
+p {
+    text-align: center;
+}
+
+q {
+    quotes: '[' ']';
+}
+
+.first_row {
+    width: 100%;
+
+    display: table-cell;
+}
+
+.groups {
+    position: relative;
+    top: -3px;
+    right: -11px;
+
+    font-family: helvetica, sans-serif;
+    font-size: 11px;    
+}
+
+.group:hover {
+    background-color: #f8f8f8; 
+}
+
+.img_2 {
+    height: 88px;
+    width: 143px;
+
+    position: absolute;
+    top: 33px;
+    left: 9px;  
+}
+
+.last_row {
+    width: 300px;
+
+    display: table-cell;
+}
+
+.line {
+    width: 56px;
+
+    transform: rotate(26deg);
+}
+
+.lines::after {
+    position: absolute;
+    z-index: 3;
+    top: 148px;
+    left: 520px;
+    
+    content: '_________';
+    
+    display: none;
+    
+    transform: rotate(-7deg);
+}
+
+.lines::before {
+    position: absolute;
+    z-index: 2;
+    top: 132px;
+    left: 318px;
+     
+    content: '__________';
+    
+    display: none;
+    
+    transform: rotate(7deg);
+}
+
+.marquee {
+    position: relative;
+
+    vertical-align: top;
+}
+
+.number {
+    min-width: 72px;
+
+    text-align: center;
+}
+
+.number_row {
+    padding-top: 21px;
+}
+
+.one_row {
+    vertical-align: middle;
+
+    border-collapse: separate;
+    border-spacing: 2px;   
+}
+
+.p {
+    padding-left: 25px;
+}
+
+.periods {
+    position: relative;
+    top: 2px;
+    right: 12px;
+
+    font-family: helvetica, sans-serif;
+    font-size: 11px;    
+}
+.second_row {
+    width: 100%;
+
+    display: table-cell;
+}
+
+.tbody .tr:nth-of-type(7) .td:nth-of-type(3) {
+    position: relative;
+
+    vertical-align: top;
+}
+
+.tfoot {
+    text-align: center;
+
+    padding-top: 20px;
+}
+
+.tfoot_row {
+    border-radius: 10px;
+}
+
+.tfoot .td {
+    width: 75px;
+
+    padding: 3px;
+}
+
+.tfoot .th {
+   font-family: Impact;
+   font-size: 15px;
+   border-collapse: separate;
+}
+
+.tfoot a:hover::after {
+    display: none;
+}
+
+.td:hover::after,.td:hover::before, .td:hover .lines::after, .td:hover .lines::before {
+    display: block;
+}
+
+.td:hover small::before, .td:hover big::before, .td:hover bdo::before, .td:hover bdi::before {
+    display: block;
+}
+
+.tfoot .actinide, .actinide a, .actinide a::after { background: radial-gradient(#33cc99, #99ffcc);}  
+.tfoot .alkali_metal, .alkali_metal a, .alkali_metal a::after { background: radial-gradient(#debfaf, #ffcc66);}
+.tfoot .alkaline_earth, .alkaline_earth a, .alkaline_earth a::after { background: radial-gradient(#e8e895, #ffff66);}
+.tfoot .basic_metal, .basic_metal a, .basic_metal a::after { background: radial-gradient(#cde2c3, #99ff99);}
+.tfoot .halogen, .halogen a, .halogen a::after { background: radial-gradient(#d59dd4, #d7aeda);}
+.tfoot .lanthanide, .lanthanide a, .lanthanide a::after { background: radial-gradient(#66ffcc, #66ffff);}
+.tfoot .noble_gas, .noble_gas a, .noble_gas a::after { background: radial-gradient(#e2a7c4, #cc9999);}
+.tfoot .nonmetal, .nonmetal a, .nonmetal a::after { background: radial-gradient(#cc99ff, #cc99cc);}
+.tfoot .semi_metal, .semi_metal a, .semi_metal a::after { background: radial-gradient(#82ccde, #99cccc);}
+.tfoot .transition_metal, .transition_metal a, .transition_metal a::after { background: radial-gradient(#ffcccc, #d7a6e0);}
+
+.tfoot a {
+    background: rgba(0, 0, 0, 0);
+}
+@media (min-width: 3500px) {
+	bdo, bdi {
+		font-size: 5px;
+	}
+}
+
+/*q::after {
+    width: 143px;
+
+    content: attr(content-text);
+    position: absolute;
+    z-index: 2;
+    top: 48px;
+    left: 400px;
+    display: none;
+    text-align: center;
+    font-size: 12px;
+}
+a:hover q::after {
+    display: block;
+}*/

@@ -1,0 +1,333 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    -webkit-user-select: none;
+
+    background-color: #f8f8f8;
+}
+
+main {
+	position: relative;
+
+	display: table;
+	margin: auto;
+}
+
+table, caption { 
+    background-color: #f8f8f8;
+    border-spacing: 0;
+    margin: auto;
+}
+
+caption {
+    color: #433c9e;
+    font-family: lobster, cursive;
+    font-size: 40px;
+    text-align: center;
+              
+    padding: 115px 40px 40px 40px;
+    border-width: 0 5px;
+}
+
+th {
+    color: #433c9e;
+}
+
+td {
+    font-family: impact, charcoal, sans-serif;
+    text-align: center;
+
+
+    border: 2px solid #f8f8f8;
+    border-radius: 5%;
+}
+
+a { 
+	width: 70px;
+
+    color: black;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    display: table;
+    margin: auto;
+}
+
+ruby {
+    font-family: Impact;
+    font-size: 15px;
+
+    display: inline-block;
+    margin: auto;
+}
+
+rt {
+    width: 65px;
+
+    font-family: helvetica, sans-serif;
+    line-height: 10px;
+    text-align: left;
+
+    display: block; 
+    padding: 3px 0 0 3px;     
+}
+
+strong {
+    width: 70px;
+
+    font-family: helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    display: block;
+    margin: auto;     
+}
+
+tt {
+    width: 70px;
+
+    font-family: Courier New;
+    font-size: 9px;
+    text-align: center;
+    line-height: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    display: block;
+    margin: auto;
+}
+
+q {
+    quotes: '[' ']';
+}
+
+td div {
+    height: 90px;
+    width: 145px;
+
+    position: absolute;
+    z-index: 1;
+    top: 207px;
+    left: 423px;
+    
+    display: none;
+}
+
+div ruby {
+    font-size: 20px;
+}
+
+div rt {
+    width: 133px;
+
+    
+    font-size: 12px;
+    padding-left: 2px;
+}
+
+div strong {
+    font-size: 11px;
+}
+
+div tt {
+    font-size: 12px;
+}
+
+div ruby::before {
+    content: url(../svg/svg_line.svg);
+
+    position: absolute;
+    top: 0;
+    left: 100px;
+
+    transform: rotate(-7deg);
+}
+
+div ruby::after {
+    width: 45px;
+
+    content: "Element symbol";
+
+    position: absolute;
+    top: -2px;
+    left: 195px;
+
+    font-family: helvetica, sans-serif;
+    font-size: 12px;
+}
+
+div ruby > rt::before {
+    content: url(../svg/svg_line.svg);
+
+    position: absolute;
+    top: -10px;
+    left: -95px;
+
+    transform: rotate(7deg);
+}
+
+div ruby > rt::after {
+    width: 35px;
+
+    content: "Atomic number";
+
+    position: absolute;
+    top: -15px;
+    left: -135px;
+}
+
+div strong::before {
+    content: url(../svg/svg_line.svg);
+
+    position: absolute;
+    left: -58px;
+    top: 40px;
+
+    transform: rotate(-7deg);
+}
+
+div strong::after {
+    width: 45px;
+
+    content: "Element name";
+
+    position: absolute;
+    top: 40px;
+    left: -100px;
+
+    font-size: 12px;
+}
+
+div tt::before {
+    content: url(../svg/svg_line.svg);
+
+    position: absolute;
+    left: 100px;
+    top: 52px;
+
+    transform: rotate(7deg);
+}
+
+div tt::after {
+    width: 45px;
+
+    content: "Atomic mass";
+
+    position: absolute;
+    top: 53px;
+    left: 195px;
+
+    font-family: helvetica, sans-serif;
+}
+
+td:hover{
+    border-color: #484786;
+}
+
+tbody td:hover div {
+    display: table;
+}
+
+tfoot .row, .name_row {
+    padding-top: 25px;
+    border: none;
+}
+
+figure {
+    position: absolute;
+    z-index: 1;
+    top: 175px;
+    left: 415px;
+}
+
+img {
+    width: 170px;
+}
+
+p {
+    padding-right: 10px;
+
+}
+
+.groups {
+    position: relative;
+    top: -5px;
+    right: -11px;
+
+    color: #433c9e;
+    font-family: helvetica, sans-serif;
+    font-size: 11px;
+        
+}
+
+.group:hover {
+    border-color: #f8f8f8;
+}
+
+.img_2 {
+    height: 88px;
+    width: 143px;
+
+    position: absolute;
+    top: 33px;
+    left: 9px;  
+}
+
+.last_tr {
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.last_tr a{
+    font-size: 14px;
+
+	display: block;    
+}
+
+.line {
+    width: 56px;
+
+    transform: rotate(26deg);
+}
+
+.no_border:hover {
+    border: none;
+}
+
+.number {
+    padding-top: 24px;
+}
+.periods {
+    position: relative;
+    top: 3px;
+    right: 3px;
+
+    color: #433c9e;
+    font-family: helvetica, sans-serif;
+    font-size: 11px;
+        
+}
+.actinide, .actinide div { background: radial-gradient(#33cc99, #99ffcc);}  
+.alkali_metal, .alkali_metal div  { background: radial-gradient(#debfaf, #ffcc66);}
+.alkaline_earth, .alkaline_earth div { background: radial-gradient(#e8e895, #ffff66);}
+.basic_metal, .basic_metal div { background: radial-gradient(#cde2c3, #99ff99);}
+.halogen, .halogen div { background: radial-gradient(#d59dd4, #d7aeda);}
+.lanthanide, .lanthanide div { background: radial-gradient(#66ffcc, #66ffff);}
+.noble_gas, .noble_gas div { background: radial-gradient(#e2a7c4, #cc9999);}
+.nonmetal, .nonmetal div { background: radial-gradient(#cc99ff, #cc99cc);}
+.semi_metal, .semi_metal div { background: radial-gradient(#82ccde, #99cccc);}
+.transition_metal, .transition_metal div { background: radial-gradient(#ffcccc, #d7a6e0);}
+
+@media (min-width: 3500px){
+	tt, strong {
+		font-size: 5px;
+	}
+}

@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+table, caption { 
+    background-color: #F8F8F8;
+    border-spacing: 0;
+    margin: auto;
+}
+table { 
+    position: relative;
+
+    margin-bottom: 70px;
+}
+body {
+    position: relative;
+
+    text-align: center;
+    -webkit-user-select: none;
+
+    background-color: #F8F8F8;
+}
+main {
+    position: relative;
+
+    display: table;
+    margin: auto;
+}
+caption {
+    color: #433C9E;
+    font-family: lobster, cursive;
+    font-size: 40px;
+    text-align: center;
+              
+    padding: 115px 40px 40px 40px;
+    border-width: 0 5px;
+}
+strong {
+    width: 70px;
+
+    font-family: helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    display: block;
+    margin: auto;     
+}
+tt {
+    width: 70px;
+    font-family: Courier New;
+    font-size: 9px;
+    text-align: center;
+    line-height: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    display: block;
+    margin: auto;
+}
+rt {
+    font-family: helvetica, sans-serif;
+    line-height: 10px;
+
+    display: table-caption; 
+    padding: 3px 0 0 3px;     
+}
+a { 
+    width: 70px;
+
+    color: black;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    display: table;
+    margin: auto;
+}
+th {
+    color: #433c9e;
+}
+td div {
+    height: 88px;
+    width: 100px;
+
+    position: absolute;
+    z-index: 1;
+    top: 220px;
+    left: 440px;
+    
+    display: none;
+    border-radius: 15%;
+}
+
+div ruby {
+    font-size: 20px;
+}
+
+div rt {
+    width: 133px;
+
+    
+    font-size: 12px;
+    padding: 5px 0 0 10px;
+}
+
+div strong {
+    font-size: 12px;
+    padding-top: 7px;
+}
+
+div tt {
+    font-size: 12px;
+    padding-top: 8px;
+}
+
+td {
+    font-family: impact, charcoal, sans-serif;
+    text-align: center;
+
+    padding-top: 3px;
+    border: 2px solid #F8F8F8;
+    border-radius: 5%;
+}
+ruby {
+    font-family: Impact;
+    font-size: 15px;
+
+    display: table-header-group;
+    margin: auto;
+}
+figure {
+    position: absolute;
+    z-index: 1;
+    top: 175px;
+    left: 400px;
+}
+img {
+    width: 170px;
+}
+p {
+    padding-right: 10px;
+}
+.img_2 {
+    height: 88px;
+    width: 90px;
+
+    position: absolute;
+    top: 33px;
+    left: 9px;  
+}
+td:hover div {
+    display: table;
+}
+td:hover {
+    border: 2px solid #484786;
+}
+.groups {
+    position: relative;
+    top: -5px;
+    right: -11px;
+
+    color: #433c9e;
+    font-family: helvetica, sans-serif;
+    font-size: 11px;
+        
+}
+
+.group:hover {
+    border-color: #f8f8f8;
+}
+.no_border:hover {
+    border: none;
+}
+.last_tr {
+    padding: 3px;
+    border-radius: 10px;
+}
+.last_tr a {
+    font-size: 14px;
+    display: block;    
+}
+.line {
+    width: 56px;
+
+    transform: rotate(26deg);
+}
+.number {
+    padding-top: 24px;
+}
+td:hover .no_border {
+    border: none;
+}
+q.square {
+    quotes: '[' ']';
+}
+.periods {
+    position: relative;
+    top: 3px;
+    right: 3px;
+
+    color: #433c9e;
+    font-family: helvetica, sans-serif;
+    font-size: 11px;
+        
+}
+.hr1 {
+    width: 65px;
+
+    position: absolute;
+    top: 5px;
+    left: -80px;
+
+    transform: rotate(7deg);
+}
+.hr2 {
+    width: 90px;
+
+    position: absolute;
+    top: 20px;
+    left: 100px;
+
+    transform: rotate(-7deg);
+}
+.hr3 {
+    width: 90px;
+
+    position: absolute;
+    top: 60px;
+    left: -75px;
+
+    transform: rotate(-7deg);
+}
+.hr4 {
+    width: 80px;
+
+    position: absolute;
+    top: 80px;
+    left: 110px;
+
+    transform: rotate(7deg);
+}
+rt::before {
+    width: 40px;
+
+    position: absolute;
+    top: -10px;
+    left: -130px;
+
+    content: 'Atomic Number';
+    font-family: helvetica, sans-serif;
+    font-size: 11px;
+}
+ruby::before {
+    width: 40px;
+
+    position: absolute;
+    top: -4px;
+    left: 200px;
+
+    content: 'Element symbol';
+    font-family: helvetica, sans-serif;
+    font-size: 11px;
+}
+strong::before {
+    width: 40px;
+
+    position: absolute;
+    top: 53px;
+    left: -130px;
+
+    content: 'Element name';
+    font-family: helvetica, sans-serif;
+    font-size: 11px;
+}
+tt::before {
+    width: 40px;
+
+    position: absolute;
+    top: 70px;
+    left: 200px;
+
+    content: 'Atomic mass';
+    font-family: helvetica, sans-serif;
+    font-size: 13px;
+}
+.actinide, .actinide div {background: radial-gradient(#33CC99, #99FFCC);}  
+.alkali_metal, .alkali_metal div  {background: radial-gradient(#FF9966, #FFCC66);}
+.alkaline_earth, .alkaline_earth div {background: radial-gradient(#FFCC66, #FFFF66);}
+.basic_metal, .basic_metal div {background: radial-gradient(#99FF66, #99FF99);}
+.halogen, .halogen div {background: radial-gradient(#d59dd4, #e618f6);}
+.lanthanide, .lanthanide div {background: radial-gradient(#66FFCC, #66FFFF);}
+.noble_gas, .noble_gas div {background: radial-gradient(#CC6699, #CC9999);}
+.nonmetal, .nonmetal div {background: radial-gradient(#CC99FF, #CC99CC);}
+.semi_metal, .semi_metal div {background: radial-gradient(#00CCFF, #99CCCC);}
+.transition_metal, .transition_metal div {background: radial-gradient(#FFCCCC, #FF99FF);}
+
+@media (min-width: 3500px){
+    tt, strong {
+        font-size: 5px;
+    }
+}
